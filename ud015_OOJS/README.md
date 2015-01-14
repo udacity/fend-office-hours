@@ -15,7 +15,7 @@ Watch the office hours here: [Office hours link](https://plus.google.com/u/0/eve
 
 ###Start with the Project Details
 
-(was Durant 1/12/15)
+
 
 Following the steps, this demo will talk about downloading the art assets and game engine. We’ll see how to explore what we’ve downloaded with the intent to figure out where to begin.
 
@@ -47,7 +47,7 @@ Following the steps, this demo will talk about downloading the art assets and ga
 
 ##How the Game Actually Starts Running
 
-(was Durant 1/12/15)
+
 
 Of course, you don’t need to understand this as long as you know the first point below, since you can write the entire project without knowing how `main()` is first called. 
 
@@ -77,7 +77,7 @@ Resources.load([
 
 ##How to Make your Project Udacious
 
-(was Adarsh 1/12/15)
+
 
 Let us see what we can do make our arcade game UDACIOUS! To do so, we can add levels to our game, add gems that the player will have to pick up, add a start and stop feature in the game...the list is only limited by your own creativity.
 
