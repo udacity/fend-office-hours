@@ -3,7 +3,6 @@
 Link to office hours: [Office hours link](https://plus.google.com/events/cvrejvitte5a37k1vfli1veler8)
 
 
-##Recap on encapsulation and different ways to encapsulate 
 1. “this” in JavaScript
 2. Prototypal chains
 3. Object decoration
