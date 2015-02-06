@@ -1,6 +1,6 @@
 #Object Oriented Topics in Java Script
 
-Link to office hours: here [Office hours link](https://plus.google.com/events/cvrejvitte5a37k1vfli1veler8)
+Link to office hours: [Office hours link](https://plus.google.com/events/cvrejvitte5a37k1vfli1veler8)
 
 
 ##Recap on encapsulation and different ways to encapsulate 
