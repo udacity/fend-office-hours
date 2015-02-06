@@ -17,7 +17,7 @@ Functions in JS can be encapsulated inside objects (objects are collections of i
  ```
 //Creating an object
 var bio = {
-	"name": John Doe",
+	"name": "John Doe",
 	"role": "Front End Developer"
 };
 
@@ -69,7 +69,7 @@ obj2.my_method(); //logs "Jane”, because this gets bound to “obj2”
 We can use *call* when calling our function (functionName.call()) and specify in the first parameter what we want *this* to be bound to.
 
 ##Prototypal Chains (Can I Borrow Some of your Properties?)
-Allows to reuse objects we already have if we defined. Allows for an object to "get" some of its properties from another object. The properties are not copied onto the new object we create that way, but instead we tell JS to look for properties not found in the new object in the old one.
+Allows to reuse objects we already have. Allows for an object to "get" some of its properties from another object. The properties are not copied onto the new object we create that way, but instead we tell JS to look for properties not found in the new object in the old one.
 
  ```
 var person = {
