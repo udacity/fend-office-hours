@@ -2,13 +2,13 @@
 
 Link to office hours: [Office hours link](https://plus.google.com/events/cvrejvitte5a37k1vfli1veler8)
 
-
-1. “this” in JavaScript
-2. Prototypal chains
-3. Object decoration
-4. Functional Classes
-5. Prototypal classes
-6. Pseudoclassical Classes
+1. Objects in JS and Encapsulation
+2. “this” in JavaScript
+3. Prototypal chains
+4. Object decoration
+5. Functional Classes
+6. Prototypal classes
+7. Pseudoclassical Classes
 
 ##Objects in JS and Encapsulation
 
