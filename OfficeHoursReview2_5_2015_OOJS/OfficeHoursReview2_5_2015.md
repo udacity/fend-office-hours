@@ -18,7 +18,7 @@ Functions in JS can be encapsulated inside objects (objects are collections of i
 //Creating an object
 var bio = {
 	"name": John Doe",
-	"role": "Front End Developer",
+	"role": "Front End Developer"
 };
 
 //Encapsulating a function
