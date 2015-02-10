@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Searching In Dom Example</title>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  </head>
+  <body>
+
+    <div>John Resig</div>
+    <div>George Martin</div>
+    <div>Malcom John Sinclair</div>
+    <div>J. Ohn</div>
+    <div>George Martin</div>
+    <div>Malcom John Sinclair</div>
+    <div>J. Ohn</div>
+    <div>George Martin</div>
+    <div>Malcom John Sinclair</div>
+    <div>J. Ohn</div>
+    <div>George Martin</div>
+    <div>Malcom John Sinclair</div>
+    <div>J. Ohn</div>
+    <div>George Martin</div>
+    <div>Malcom John Sinclair</div>
+    <div>J. Ohn</div>
+    <div>George Martin</div>
+    <div>Malcom John Sinclair</div>
+    <div>J. Ohn</div>
+    <div>George Martin</div>
+    <div>Malcom John Sinclair</div>
+    <div>J. Ohn</div>
+    <div>George Martin</div>
+    <div>Malcom John Sinclair</div>
+    <div>J. Ohn</div>
+
+  <script>
+
+    // Get an array of HTML Elements that are divs
+    myDivs = document.getElementsByTagName('div');
+
+    // Loop through all of my elements and check if 'George' matches in the text of each div
+    for (var i = 0; i < myDivs.length; i++) {
+      if (myDivs[i].innerText.indexOf('George') > -1) {
+        myDivs[i].style.color = 'red';
+      }
+    }
+
+    // Use jQuery to essentially do the same thing here
+    $( 'div:contains("John")' ).css( 'color', 'blue' );
+  </script>
+
+  </body>
+</html>
+
+<!-- This demos the power of using jQuery and CSS selectors to search for our elements in the DOM tree. Less code we need to write = more time for us to concentrate on our actual program ^_^ -->
