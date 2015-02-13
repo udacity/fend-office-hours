@@ -1,4 +1,6 @@
-#Front-End Web Developer Office Hours
+#FlexBox and Google Maps API!
+
+##Office Hours Link
 
 Here is the Office Hours link to the recorded [event] (https://plus.google.com/events/c27q2s82euhubo51bufac02en04)
 
