@@ -1,4 +1,4 @@
-#Front-End Web Developer Office Hours 2/12/15
+#Front-End Web Developer Office Hours
 
 Here is the Office Hours link to the recorded [event] (https://plus.google.com/events/c27q2s82euhubo51bufac02en04)
 
