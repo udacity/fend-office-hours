@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fun with FlexBox!</title>
+
+  <style>
+
+    div {
+      height: 100px;
+      width: 100%;
+    }
+
+    /* Crucial Here */
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .blue {
+      background-color: blue;
+      color: white;
+    }
+
+    .green {
+      background-color: green;
+    }
+
+    .red {
+      background-color: red;
+    }
+
+    .orange {
+      background-color: orange;
+    }
+
+    .purple {
+      background-color: purple;
+    }
+
+    .grey {
+      background-color: grey;
+    }
+
+    .yellow {
+      background-color: yellow;
+    }
+
+    .black {
+      background-color: black;
+      color: white;
+    }
+
+    /* Use Media Queries to control how the layout changes */
+    @media screen and (min-width: 361px) {
+
+      .green {
+        width: 50%;
+      }
+
+      .red {
+        width: 50%;
+      }
+
+      .grey {
+        width: 50%;
+      }
+
+      .yellow {
+        width: 50%;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+  <div id="nav" class="blue">NAVIGATION</div>
+  <div class="green">Weather</div>
+  <div class="red">Advertisement</div>
+  <div class="orange">Featured article</div>
+  <div class="purple">Another featured article</div>
+  <div class="grey">Related article</div>
+  <div class="yellow">Another related article</div>
+  <div id="footer" class="black">FOOTER</div>
+
+</div>
+
+</body>
+</html>
