@@ -65,6 +65,7 @@ Since we have a little more time we also thought we'd spend a brief moment talki
    * What it does? 
     * Lets you recommit while not adding a new commit to your repositories snapshot
    * How do you use it?
+      
       ```
       git commit -m 'a commit message'
       git add forgotten_file
@@ -76,7 +77,8 @@ Since we have a little more time we also thought we'd spend a brief moment talki
    * What it does?
     * Let’s you modify what is in the staging area.
    * How do you do it?
-	 ```
+    
+     ```
      git reset HEAD file-to-uncommit
      ```
 * **git checkout filename**
@@ -85,6 +87,7 @@ Since we have a little more time we also thought we'd spend a brief moment talki
    * What it does?
     * Reverts the file back to a commit before the most recent one and deletes any history of that file in the commit history
    * How do you do it?
+   
     ```
     git checkout file-to-rollback
     ```
