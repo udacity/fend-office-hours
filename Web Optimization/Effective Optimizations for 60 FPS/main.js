@@ -583,7 +583,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var cols = 8;
   var s = 256;
 
-  /* I could only a handful of pizzas that show up on the screen at any given scroll. That amount doesn't look like 200 pizzas to me.... */
+  /* We could only see a handful of pizzas that show up on the screen at any given scroll. That amount doesn't look like 200 pizzas to me.... */
   for (var i = 0; i < 200; i++) {
     var elem = document.createElement('img');
     elem.className = 'mover';
