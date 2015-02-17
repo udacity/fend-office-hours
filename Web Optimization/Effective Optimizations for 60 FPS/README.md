@@ -103,7 +103,7 @@ transform: trnslated3d(0,0,0);
 
 to force elements into their own composite layer.
 
-Moving all of these pizzas to its own composite layer offloads the texturing and painting to the GPU (Graphics Processing Unit) or video card freeing up the CPU. But if the GPU cannot handle the extra memory load, there may be even poorer performance. Be careful and think of the tradeoffs whenever we force our elements to get rendered on its own composite layer. It's crucial to test our our hacks on actual devices to make sure performance on these devices is acceptable.
+Moving all of these pizzas to its own composite layer offloads the texturing and painting to the GPU (Graphics Processing Unit) or video card freeing up the CPU. But if the GPU cannot handle the extra memory load, there may be even poorer performance. Be careful and think of the tradeoffs whenever we force our elements to get rendered on its own composite layer. It's crucial to test our hacks on actual devices to make sure performance on these devices is acceptable.
 
 Here is the new timeline with the paint optimizations done:
 
@@ -117,7 +117,7 @@ Please note that there seemed to be a tradeoff between Scripting and Rendering a
 
 Our first step in optimizations are to measure and understand exactly what the code is doing.
 
-We need to go through every line of the critical code and be very critical and question whether any particulare line of code can be further optimized.
+We need to go through every line of the critical code and be very critical and question whether any particular line of code can be further optimized.
 
 Comments are provided in a sample main.js [here](main.js) to see an example of a critical thought process for our critical functions.
 
