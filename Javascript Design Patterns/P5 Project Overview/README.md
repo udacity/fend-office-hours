@@ -1,7 +1,8 @@
 <h1>Office Hours Link</h1>
 <hr>
-Link to the Office Hours: <a href="https://plus.google.com/u/0/events/cb3105iclo5391h3bfg805m9k3k?authkey=CKG-_pG1hN_cmwE">P5 and P6</a>
-<a href="../../Javascript\ Testing/P6\ Overview/">Link to P6 Overview</a>
+Link to the Office Hours: <a href="https://plus.google.com/u/0/events/cb3105iclo5391h3bfg805m9k3k?authkey=CKG-_pG1hN_cmwE">P5 and P6</a><br>
+
+<a href="../../Javascript Testing/P6 Overview/">Link to P6 Overview</a>
 <h1><u>Project 5 Neighborhood Map Example<u></h1>
 <hr>
 Let's talk a little bit about the basic functionality of our map! First and foremost we need to make sure we include the 3 main components A Search bar, a list view, and a map. Notice our map has markers and the list view contains the names of each of the locations on our map.
