@@ -1,7 +1,7 @@
 <h1>Office Hours Link</h1>
 <hr>
-Link to the Office Hours: <a href="https://plus.google.com/u/0/events/cb3105iclo5391h3bfg805m9k3k?authkey=CKG-_pG1hN_cmwE">P5 and P6</a>
-<a href="../../Javascript\ Design\ Patterns/P5\ Project\ Overview/">Link to P5 Overview</a>
+Link to the Office Hours: <a href="https://plus.google.com/u/0/events/cb3105iclo5391h3bfg805m9k3k?authkey=CKG-_pG1hN_cmwE">P5 and P6</a><br>
+<a href="../../Javascript Design Patterns/P5 Project Overview/">Link to P5 Overview</a>
 <h1>Project 6 The Feedreader Testing with Jasmine</h1>
 This project is all about writing tests using Jasmine to make sure a udacity blog RSS feed works correctly. 
 
