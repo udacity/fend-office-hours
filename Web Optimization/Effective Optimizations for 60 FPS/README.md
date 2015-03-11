@@ -98,7 +98,7 @@ Other hacks developers have used are:
 
 ```
 transform: translateZ(0);
-transform: trnslated3d(0,0,0);
+transform: translate3d(0,0,0);
 ```
 
 to force elements into their own composite layer.
