@@ -2,7 +2,7 @@
 
 ## Office Hours Link
 
-Link to the Office Hours: [Git Branching Strategies](https://plus.google.com/u/0/events/ca8c5vkrhg07lssbvomq2rjh2sg)
+Link to the Office Hours: [Git Branching Strategies](https://plus.google.com/events/ca8c5vkrhg07lssbvomq2rjh2sg?authkey=CLW8xcGdl4TeNg)
 
 ##Introduction
 
