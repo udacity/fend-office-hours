@@ -124,7 +124,7 @@ Poornima demonstrated quite a few shortcuts!
 - There are several plugin managers for Vim. The one I use is called
   [Vundle][vundle]. You can see traces of it in the vimrc file located above.
 
-[hangout]: https://plus.google.com/events/c3437q1398s867a030o1fdkufs0
+[hangout]: https://plus.google.com/events/c3437q1398s867a030o1fdkufs0?authkey=CILhoLjBpMHrDA
 [subl]: http://www.sublimetext.com
 [vim]: http://www.vim.org
 [emacs]: http://www.gnu.org/software/emacs/
