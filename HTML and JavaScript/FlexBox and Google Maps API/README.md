@@ -2,7 +2,7 @@
 
 ##Office Hours Link
 
-Here is the Office Hours link to the recorded [event] (https://plus.google.com/events/c27q2s82euhubo51bufac02en04)
+Here is the Office Hours link to the recorded [event] (https://plus.google.com/events/c27q2s82euhubo51bufac02en04?authkey=CM_Ol6KQhpXUXA)
 
 ##Part 1: Flexbox
 
