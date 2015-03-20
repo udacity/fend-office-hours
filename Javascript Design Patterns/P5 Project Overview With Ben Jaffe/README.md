@@ -2,7 +2,7 @@
 
 ## Office Hours Link
 
-Link to the Office Hours: [P5 Office Hours](https://plus.google.com/u/0/events/cicd8td44vj9j0cfa9p6on5c81g)
+Link to the Office Hours: [P5 Office Hours](https://plus.google.com/events/cicd8td44vj9j0cfa9p6on5c81g?authkey=CPSAh8bu9NrJLg)
 
 ## Overview of the Rubric:
 
