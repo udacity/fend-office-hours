@@ -1,7 +1,7 @@
 #Effective Optimizations For 60 FPS 
 ##Here is the Office Hours Link
 
-Here is the link to the live [recording](https://plus.google.com/events/c8eah6f0d0t9eretebpm7dqi0ok)
+Here is the link to the live [recording](https://plus.google.com/events/c8eah6f0d0t9eretebpm7dqi0ok?authkey=CKaNhtb0quvqKA)
 
 ##First Step: Measure
 
