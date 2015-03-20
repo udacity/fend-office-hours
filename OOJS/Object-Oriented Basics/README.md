@@ -1,6 +1,6 @@
 #Object Oriented Topics in Java Script
 
-Link to office hours: [Office hours link](https://plus.google.com/events/cvrejvitte5a37k1vfli1veler8)
+Link to office hours: [Office hours link](https://plus.google.com/events/cvrejvitte5a37k1vfli1veler8?authkey=CIistZK2pbbqYA)
 
 1. Objects in JS and Encapsulation
 2. “this” in JavaScript
