@@ -1,0 +1,115 @@
+<!-- Emmet Docs : http://docs.emmet.io/ --> 
+
+<!-- Sublime has syntax support for emmet! -->
+
+<!-- type a tag name and hit tab to generate the tag --> 
+
+div
+
+
+<!-- You can nest tags by using the > operator -->
+
+div>ul>li
+
+<!-- You can create sibling operators with the + operator -->
+
+div+p+bq
+
+<!-- Use the ^ operator to climb up the tree -->
+
+div+div>p>span+em^bq
+
+div>p>span^^div>p>span
+
+<!-- You can use the * operator to  define how many times an element gets outputted --> 
+
+ul>li*5
+
+div*3
+
+<!-- use parantheses for complex operations! --> 
+
+div>(header>ul>li*2>a)+footer>p
+
+(div>ul>(li*3))+footer>p
+
+<!-- In CSS you identify an ID or Class with # and . do the same with Emmet --> 
+
+div#header+div.page+div#footer.class1.class2.class3 
+
+div.row>(div.col-md-3+div.col-md-3)
+
+<!-- you can use [] to add custom attributes --> 
+
+title[custom="hello" colspan=3]
+
+<!-- Item numbering with the $ operator --> 
+
+ul>li.item$*5
+
+div.row>(div.col-md-$*3)
+
+ul>li.item$$$*5
+
+<!-- Use {} to add text to an element --> 
+
+div.story{This is my story}
+
+<!-- You can do Lorem Ipsum too! --> 
+
+p*4>lorem20
+
+ul>lorem10.item*4
+
+
+<!-- Emmet works with CSS too --> 
+<style>
+.select{
+	p30!+m10
+	oh
+	w100p
+	c#e0
+}
+</style>
+
+<!-- Tips: Don't try to create super complex operations, emmet is about speed and if you have to stop and think how you would write something in emmet you are not using it right. It's better to use a few short operations than one big one --> 
+
+
+<!-- Use Ctrl + D to select contents inside a tag --> 
+
+<!-- Use Ctrl+Shift+T (ctrl+alt+j windows) to go to the matching pair tag --> 
+
+<div id="page">
+	<section class="content">
+		<h1>Document Example</h1>
+		<p>Lorem ipsum dolor sit amet.</p>
+	</section>
+</div>
+
+<!-- ctrl+ can be used to wrap individual lines with a wrapper tag -->
+
+<!-- note: nav>ul.nav>li.nav$* --> 
+
+<div id="page">
+	
+	About
+	News
+	Products
+	Contacts
+
+</div>
+
+<!-- use ctrl+option -> or <- to select next edit point --> 
+<!-- use shift + command . or , to navigate to select important code parts --> 
+<ul>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+</ul>
+
+Toggle 
+A 
+Comment by selecting the block
+and hitting command + /
+
+
+
