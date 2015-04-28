@@ -83,7 +83,7 @@ student.school = "UPenn";
 console.log(student.school); //will log “UPenn”
 ```
 
-When we refer to a property that is defined and passed on from “person” to “student”, since that property is not found in “student”, we go up the chain and see if it’s found on “persoon”. If we find it in “person” then that’s the value we go for.
+When we refer to a property that is defined and passed on from “person” to “student”, since that property is not found in “student”, we go up the chain and see if it’s found on “person”. If we find it in “person” then that’s the value we go for.
 
 ```
 console.log(student.p_name); //will log “John”
@@ -113,7 +113,7 @@ console.log(mary.p_name); //Logs “Mary”
 ```
 
 ##Functional Classes
-These really are just functions, and are very similar go Object Decorators, except that instead of receiving the object as an input, they create it. The function that creates the objects is called the constructor function
+These really are just functions, and are very similar to Object Decorators, except that instead of receiving the object as an input, they create it. The function that creates the objects is called the constructor function
 
 ```
 //Let's define a new function on the global scope first
