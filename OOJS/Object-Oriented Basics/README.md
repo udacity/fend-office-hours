@@ -22,14 +22,14 @@ var bio = {
 };
 
 //Encapsulating a function
-bio.pirntToLog = function pirntToLog()
+bio.printToLog = function printToLog()
 {
 	console.log(bio.name);
 	
 };
 
 //Calling the function
-bio.pirntToLog();
+bio.printToLog();
 ```
 
 But there’s a lot more that you can do than just defining individual objects and then adding functions to them. You can make classes that will create objects for you, and you can have methods encapsulated in these classes as well.
