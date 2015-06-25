@@ -49,7 +49,6 @@ So we require that you utilize Google's Map API. The main thing we want to point
 <a href="https://instagram.com/developer/">Instagram's API</a>
 <a href="https://developer.foursquare.com/">Foursquare's API</a>
 <a href="http://www.mediawiki.org/wiki/API:Main_page">Wikipedia's API</a>
-<a href="https://dev.twitter.com/">Twitter's API</a>
 
 
 <h2><u>Questions</u></h2>
