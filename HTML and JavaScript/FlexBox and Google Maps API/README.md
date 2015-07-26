@@ -89,7 +89,7 @@ The Map class is the JS class that represents a map. Objects of this class repre
 
 The two parameters passed are the div in the html file to which the map attaches, and the map-options variable we initialized earlier in initializeMap.
 
-You can read here more about google [maps]: (https://developers.google.com/maps/documentation/javascript/maptypes)
+You can read here more about google [maps](https://developers.google.com/maps/documentation/javascript/maptypes)
 
 Then we call `locationFinder()` to create an array of all the locations in the resume: This function loops over our education and job entries and pushes those addresses into an array, and also takes the address from our bio. This returns that array.
 
