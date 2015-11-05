@@ -49,9 +49,9 @@ This Webcast covers:
 * [30:00] [Webcast on Chrome Devtools](https://plus.google.com/u/0/events/cnol83cpan170apb933pvmlts94?authkey=CJaD8fvjs_2OSg)
 * [34:35] Toggling border-box
 * [35:00] Overflow
-* [37:00] Blogs for advanced CSS [CSS Tricks (Chris Coyier) AWESOME list of CSS Blogs](https://css-tricks.com/blogs-i-read/)
+* [37:00] List of blogs for advanced CSS: [CSS Tricks (Chris Coyier) AWESOME list of CSS Blogs](https://css-tricks.com/blogs-i-read/)
 * [39:05] Centering elements
-* [42:40] Pseudo-classes (:hover) and pseudo-elements (::before)
+* [42:40] Pseudo-classes (`:hover`) and pseudo-elements (`::before`)
   Easily Confused!
   * So technically, Durant was talking about pseudo-*elements*
   `::before` and `::after` which you can see were easily confused with
