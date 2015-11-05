@@ -16,7 +16,7 @@ This Webcast covers:
 * [2:50] CSS Preprocessors
   * Coach JohnMav's Summary of CSS Preprocessors (more advanced): https://discussions.udacity.com/t/an-overview-of-css-preproccessors-beginner/22900﻿
   * [LESS](http://lesscss.org/) used in Bootstrap < 3
-  * [SASS](http://sass-lang.com/) used in Bootstrap 4a
+  * [SASS](http://sass-lang.com/) used in Bootstrap 4a. [Udacity Tutorial on SASS](https://discussions.udacity.com/t/sass-syntactically-awesome-style-sheets-intermediate/23737)
 * [5:50] Organizing CSS
   * With mutliple CSS files (just CSS, see LESS or SASS for more structure). You can import other CSS files with [@import](https://developer.mozilla.org/en-US/docs/Web/CSS/@import), but more likely, you would merge (and minify) your CSS with task runners like Grunt and Gulp (not the focus of this webcast, but see this webcast for that: [Webcasts: Bower and Taskrunners (Grunt & Gulp)](https://plus.google.com/u/0/events/cqecguv492nm1uhmnqo3khr2bv4?authkey=CNG7rsiHksvtQg) instead)
   * [6:44] Inside a file
