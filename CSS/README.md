@@ -36,7 +36,7 @@ This Webcast covers:
   * vmax - whichever is bigger
   * vmin - whichever is smaller
 * [25:15] [Block elements vs. Inline vs. Inline-Block](http://bit.ly/1NverG8)
-* [28:30] widths in CSS are for content only, unless you use
+* [28:30] widths in CSS are for content only, unless you use border-box so that widths will include borders and padding.
 ```css
 * {
 	box-sizing: border-box;
