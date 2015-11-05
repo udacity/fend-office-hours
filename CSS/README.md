@@ -14,7 +14,7 @@ This Webcast covers:
   * http://daneden.github.io/animate.css/ (from Jonathan at [53:01])
 * [2:24] [The Box Model](https://css-tricks.com/the-css-box-model/)
 * [2:50] CSS Preprocessors
-  * Coach JohnMav's Summary of CSS Preprocessors (more advanced): https://discussions.udacity.com/t/an-overview-of-css-preproccessors-beginner/22900﻿
+  * Coach JohnMav's [Overview of CSS Preprocessors](https://discussions.udacity.com/t/an-overview-of-css-preproccessors-beginner/22900)
   * [LESS](http://lesscss.org/) used in Bootstrap < 3
   * [SASS](http://sass-lang.com/) used in Bootstrap 4a. [Udacity Tutorial on SASS](https://discussions.udacity.com/t/sass-syntactically-awesome-style-sheets-intermediate/23737)
 * [5:50] Organizing CSS
