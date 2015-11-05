@@ -14,8 +14,8 @@ This Webcast covers:
   * http://daneden.github.io/animate.css/ (from Jonathan at [53:01])
 * [2:24] [The Box Model](https://css-tricks.com/the-css-box-model/)
 * [2:50] CSS Preprocessors
-  * John's Summary of CSS Preprocessors (more advanced): https://discussions.udacity.com/t/an-overview-of-css-preproccessors-beginner/22900﻿
-  * [LESS](http://lesscss.org/) used in Bootstrap <3
+  * Coach JohnMav's Summary of CSS Preprocessors (more advanced): https://discussions.udacity.com/t/an-overview-of-css-preproccessors-beginner/22900﻿
+  * [LESS](http://lesscss.org/) used in Bootstrap < 3
   * [SASS](http://sass-lang.com/) used in Bootstrap 4a
 * [5:50] Organizing CSS
   * With mutliple CSS files (just CSS, see LESS or SASS for more structure). You can import other CSS files with [@import](https://developer.mozilla.org/en-US/docs/Web/CSS/@import), but more likely, you would merge (and minify) your CSS with task runners like Grunt and Gulp (not the focus of this webcast, but see this webcast for that: [Webcasts: Bower and Taskrunners (Grunt & Gulp)](https://plus.google.com/u/0/events/cqecguv492nm1uhmnqo3khr2bv4?authkey=CNG7rsiHksvtQg) instead)
@@ -23,7 +23,7 @@ This Webcast covers:
 * *[8:20 - 10:40] Sorry, dead zone to make sure webcast was visible.*
 * [13:22] Bootstrap vs. Flexbox
 * [15:15] [ARIA - Accessible Rich Internet Applications](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA)
-  [Bootstrap Modals](http://getbootstrap.com/javascript/#modals), note attribute: "aria-label"
+  [Bootstrap Modals](http://getbootstrap.com/javascript/#modals), note attribute: `aria-label`
 * [16:00] Usability in Design
   * [Web Design for Color Blind People](http://webdesign.tutsplus.com/articles/designing-for-and-as-a-color-blind-person--webdesign-3408)
 * [17:20] Quick recap on how CSS works
