@@ -11,7 +11,7 @@ This Webcast covers:
   * Learn to Code: [Transitions & Animations](http://learn.shayhowe.com/advanced-html-css/transitions-animations/)
   * [Cool CSS Animations on Code Pen](http://webdesign.tutsplus.com/articles/15-inspiring-examples-of-css-animation-on-codepen--cms-23937)
   * [Other dazzling examples](http://tutorialzine.com/2014/07/20-impressive-css3-techniques-libraries-and-examples/)
-  * http://daneden.github.io/animate.css/ (from Jonathan at 53:01)
+  * http://daneden.github.io/animate.css/ (from Jonathan at [53:01])
 * [2:24] [The Box Model](https://css-tricks.com/the-css-box-model/)
 * [2:50] CSS Preprocessors
   * John's Summary of CSS Preprocessors (more advanced): https://discussions.udacity.com/t/an-overview-of-css-preproccessors-beginner/22900﻿
