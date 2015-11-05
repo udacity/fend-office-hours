@@ -2,7 +2,7 @@
 
 Well not *everything*, but here's a good place to start. 
 
-You can get to the event page [here](https://plus.google.com/events/cdvpviipduv1senlapc62791d3o?authkey=CK3LgMf5-fr0xgE). 
+You can get to the event page (with video) [here](https://plus.google.com/events/cdvpviipduv1senlapc62791d3o?authkey=CK3LgMf5-fr0xgE). 
 
 This Webcast covers:
 
