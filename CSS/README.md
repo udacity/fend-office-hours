@@ -20,7 +20,7 @@ This Webcast covers:
 * [5:50] Organizing CSS
   * With mutliple CSS files (just CSS, see LESS or SASS for more structure). You can import other CSS files with [@import](https://developer.mozilla.org/en-US/docs/Web/CSS/@import), but more likely, you would merge (and minify) your CSS with task runners like Grunt and Gulp (not the focus of this webcast, but see this webcast for that: [Webcasts: Bower and Taskrunners (Grunt & Gulp)](https://plus.google.com/u/0/events/cqecguv492nm1uhmnqo3khr2bv4?authkey=CNG7rsiHksvtQg) instead)
   * [6:44] Inside a file
-* [8:20 - 10:40] Sorry, dead zone to make sure webcast was visible.
+* *[8:20 - 10:40] Sorry, dead zone to make sure webcast was visible.*
 * [13:22] Bootstrap vs. Flexbox
 * [15:15] [ARIA - Accessible Rich Internet Applications](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA)
   [Bootstrap Modals](http://getbootstrap.com/javascript/#modals), note attribute: "aria-label"
