@@ -31,11 +31,10 @@ This Webcast covers:
   * pixels (px) - "[picture elements](https://en.wikipedia.org/wiki/Pixel)", the dots
   * ems (em) - the width of ‘m’, relative to the font size
   * percentages (%) - relative to the parent container
-  * vw - relative to width of viewport
+  * vw - relative to width of viewport (the "viewport" is the visible part of the page)
   * vh - relative to height of viewport
   * vmax - whichever is bigger
   * vmin - whichever is smaller
-  (the "viewport" is the visible part of the page)
 * [25:15] [Block elements vs. Inline vs. Inline-Block](http://bit.ly/1NverG8)
 * [28:30] widths in CSS are for content only, unless you use
 ```css
