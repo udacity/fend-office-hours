@@ -22,7 +22,7 @@ This Webcast covers:
   * [6:44] Inside a file
 * *[8:20 - 10:40] Sorry, dead zone to make sure webcast was visible.*
 * [13:22] Bootstrap vs. Flexbox
-* [15:15] [ARIA - Accessible Rich Internet Applications](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA)
+* [15:15] [ARIA - Accessible Rich Internet Applications](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA) as seen in
   [Bootstrap Modals](http://getbootstrap.com/javascript/#modals), note attribute: `aria-label`
 * [16:00] Usability in Design
   * [Web Design for Color Blind People](http://webdesign.tutsplus.com/articles/designing-for-and-as-a-color-blind-person--webdesign-3408)
