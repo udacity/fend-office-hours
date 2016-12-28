@@ -6,7 +6,7 @@ Link to the Office Hours: [P5 Office Hours](https://plus.google.com/events/cicd8
 
 ## Overview of the Rubric:
 
-Here is the rubric for [reference](https://www.udacity.com/course/viewer#!/c-nd001/l-2711658591/m-2684328537)
+Here is the rubric for [reference](https://review.udacity.com/#!/rubrics/17/view)
 
 Hear in Ben Jaffe's (The course developer) own words of what you need to do to satisfy the rubric.
 
