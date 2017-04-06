@@ -309,7 +309,7 @@ gulp.task('webserver', function() {
 		}));
 });
 
-gulp.task('default', ['watch', 'webserver']);
+gulp.task('default', ['styles', 'scripts', 'content', 'images', 'watch', 'webserver']);
 ```
 
   [1]: https://github.com/JohnUdacity/gulp-start
