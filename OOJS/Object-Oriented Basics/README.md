@@ -1,4 +1,4 @@
-# Object Oriented Topics in Java Script
+# Object Oriented Topics in JavaScript
 
 Link to office hours: [Office hours link](https://plus.google.com/events/cvrejvitte5a37k1vfli1veler8?authkey=CIistZK2pbbqYA)
 
