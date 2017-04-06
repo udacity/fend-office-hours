@@ -22,10 +22,8 @@ var bio = {
 };
 
 //Encapsulating a function
-bio.printToLog = function printToLog()
-{
+bio.printToLog = function printToLog() {
 	console.log(bio.name);
-
 };
 
 //Calling the function
@@ -51,7 +49,7 @@ var obj2 = {
 
 //Define a function in the global scope, and use this inside the function:
 
-var printName = function(){
+var printName = function() {
 	console.log(this.name);
 };
 
@@ -62,7 +60,6 @@ obj2.my_method = printName;
 //Call the function from within obj1 and obj2
 obj1.my_method(); //logs "John", because this gets bound to “obj1”
 obj2.my_method(); //logs "Jane”, because this gets bound to “obj2”
-
 ```
 
 **Can we override what “this” refers to? Yes!**
@@ -78,6 +75,7 @@ var person = {
 
 //Create a new object, student, by “reusing” person.
 var student = Object.create(person);
+
 //Add some new properties to student (person remains unchanged)
 student.school = "UPenn";
 console.log(student.school); //will log “UPenn”
@@ -101,13 +99,12 @@ This is another way to re-use a pre-existing object, this time by directly addin
 ```js
 //this is an object decorator function as it adds properties to a person to make it into
 //a student object
-
-var studentlike = function(person, school){
+var studentlike = function(person, school) {
 	person.school = school;
 	return person;
 };
 
-var mary = studentlike({"p_name": "Mary"}, "UCLA" );
+var mary = studentlike({"p_name": "Mary"}, "UCLA");
 console.log(mary.school); //Logs “UCLA”
 console.log(mary.p_name); //Logs “Mary”
 ```
@@ -117,20 +114,20 @@ These really are just functions, and are very similar to Object Decorators, exce
 
 ```js
 //Let's define a new function on the global scope first
-var printGreeting = function(greeting){
+var printGreeting = function(greeting) {
 	console.log(greeting + " " + this.name );
 };
 
 //Define a class named Human
-var Human = function (a_name){
+var Human = function (a_name) {
 	var human = {name: a_name};
 	human.printGreeting = printGreeting;
 	return human;
 };
 
 //make an instance of the Human class
-
 var david = Human("David");
+
 david.printGreeting("Good afternoon"); //logs “Good afternoon David”
 ```
 
@@ -140,9 +137,9 @@ One disadvantage of the above way of defining a class method is that we had to r
 What we can do is instead define our PrintGreeting inside the Human class: that way it will only be accessible from within this class.
 
 ```js
-var Human2 = function (a_name){
+var Human2 = function (a_name) {
 	var human = {name: a_name};
-	human.printGreeting2 = function(greeting){
+	human.printGreeting2 = function(greeting) {
 		console.log(greeting + " " + this.name );
 	};
 	return human;
@@ -155,7 +152,7 @@ A disadvantage of this definition is that now a new instance of the PrintGreeing
 We can use the prototype object (an object that JS creates for us and attaches to each function) to store all the methods we would like associated with our class. For this to work we need to delegate all failed look-ups to our class.prototype using Object.create():
 
 ```js
-var Human3 = function (a_name){
+var Human3 = function (a_name) {
 	//delegate failed lookups of Human3 objects to Human3.prototype
 	var human = Object.create(Human3.prototype);
 	human.name = a_name;
@@ -163,8 +160,8 @@ var Human3 = function (a_name){
 };
 
 //Define printGreeting3 under Human3.prototype
-Human3.prototype.printGreeting3 = function(greeting){
-		console.log(greeting + " " + this.name );
+Human3.prototype.printGreeting3 = function(greeting) {
+	console.log(greeting + " " + this.name );
 };
 ```
 
@@ -178,14 +175,14 @@ If you’ve coded in another object oriented language (Java or C++) you might no
 ```js
 //In constructor mode JS automatically does the first and third line for us, so we
 //can comment them out
-var Human4 = function (a_name){
+var Human4 = function (a_name) {
 	//var human = Object.create(Human4.prototype);
 	this.name = a_name;
 	//return human;
 };
 
-Human4.prototype.printGreeting = function(greeting){
-		console.log(greeting + " " + this.name );
+Human4.prototype.printGreeting = function(greeting) {
+	console.log(greeting + " " + this.name );
 };
 
 //Importantly we need to use "new" keyword when creating new objects
