@@ -14,7 +14,7 @@ Link to office hours: [Office hours link](https://plus.google.com/events/cvrejvi
 
 Functions in JS can be encapsulated inside objects (objects are collections of information), in which case they become properties of these objects.
 
- ```
+ ```js
 //Creating an object
 var bio = {
 	"name": "John Doe",
@@ -38,7 +38,7 @@ But there’s a lot more that you can do than just defining individual objects a
 
 A special keyword that can be used inside functions. When these functions are called from within an object, the *this* keyword normally refers to these objects.
 
- ```
+ ```js
 // Define two objects
 var obj1 = {
 	"name": "John"
@@ -71,7 +71,7 @@ We can use *call* when calling our function (functionName.call()) and specify in
 ## Prototypal Chains (Can I Borrow Some of your Properties?)
 Allows to reuse objects we already have. Allows for an object to "get" some of its properties from another object. The properties are not copied onto the new object we create that way, but instead we tell JS to look for properties not found in the new object in the old one.
 
- ```
+ ```js
 var person = {
 	"p_name": "John"
 };
@@ -85,7 +85,7 @@ console.log(student.school); //will log “UPenn”
 
 When we refer to a property that is defined and passed on from “person” to “student”, since that property is not found in “student”, we go up the chain and see if it’s found on “person”. If we find it in “person” then that’s the value we go for.
 
-```
+```js
 console.log(student.p_name); //will log “John”
 ```
 
@@ -98,7 +98,7 @@ All JS objects delegate to the Object Prototype
 ## Object Decoration Pattern
 This is another way to re-use a pre-existing object, this time by directly adding properties to it. This is different from prototypal chains because it modifies the original object, rather than creating a new one.
 
-```
+```js
 //this is an object decorator function as it adds properties to a person to make it into
 //a student object
 
@@ -115,7 +115,7 @@ console.log(mary.p_name); //Logs “Mary”
 ## Functional Classes
 These really are just functions, and are very similar to Object Decorators, except that instead of receiving the object as an input, they create it. The function that creates the objects is called the constructor function
 
-```
+```js
 //Let's define a new function on the global scope first
 var printGreeting = function(greeting){
 	console.log(greeting + " " + this.name );
@@ -139,7 +139,7 @@ One disadvantage of the above way of defining a class method is that we had to r
 
 What we can do is instead define our PrintGreeting inside the Human class: that way it will only be accessible from within this class.
 
-```
+```js
 var Human2 = function (a_name){
 	var human = {name: a_name};
 	human.printGreeting2 = function(greeting){
@@ -154,7 +154,7 @@ A disadvantage of this definition is that now a new instance of the PrintGreeing
 ## Prototypal Classes (Have your cake and eat it)
 We can use the prototype object (an object that JS creates for us and attaches to each function) to store all the methods we would like associated with our class. For this to work we need to delegate all failed look-ups to our class.prototype using Object.create():
 
-```
+```js
 var Human3 = function (a_name){
 	//delegate failed lookups of Human3 objects to Human3.prototype
 	var human = Object.create(Human3.prototype);
@@ -175,7 +175,7 @@ Pseudo classical classes are just a convenient way for us to make JavaScript cla
 
 If you’ve coded in another object oriented language (Java or C++) you might notice that JS classes look a little different, as unlike in other languages we need to create our objects in the class function and also return them. We can make JS classes look like classes in other languages, by using the *new* keyword:
 
-```
+```js
 //In constructor mode JS automatically does the first and third line for us, so we
 //can comment them out
 var Human4 = function (a_name){
