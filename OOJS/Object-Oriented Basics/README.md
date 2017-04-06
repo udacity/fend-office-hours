@@ -13,7 +13,7 @@ Link to office hours: [Office hours link](https://plus.google.com/events/cvrejvi
 ##Objects in JS and Encapsulation
 
 Functions in JS can be encapsulated inside objects (objects are collections of information), in which case they become properties of these objects.
- 
+
  ```
 //Creating an object
 var bio = {
@@ -25,7 +25,7 @@ var bio = {
 bio.printToLog = function printToLog()
 {
 	console.log(bio.name);
-	
+
 };
 
 //Calling the function
@@ -36,7 +36,7 @@ But there’s a lot more that you can do than just defining individual objects a
 
 ##*This* Keyword
 
-A special keyword that can be used inside functions. When these functions are called from within an object, the *this* keyword normally refers to these objects. 
+A special keyword that can be used inside functions. When these functions are called from within an object, the *this* keyword normally refers to these objects.
 
  ```
 // Define two objects
@@ -77,7 +77,7 @@ var person = {
 };
 
 //Create a new object, student, by “reusing” person.
-var student = Object.create(person); 
+var student = Object.create(person);
 //Add some new properties to student (person remains unchanged)
 student.school = "UPenn";
 console.log(student.school); //will log “UPenn”
@@ -89,7 +89,7 @@ When we refer to a property that is defined and passed on from “person” to �
 console.log(student.p_name); //will log “John”
 ```
 
-When we look for “p_name”, on “student”, since we can’t find “p_name” on “student” we go up the chain and look for it in “person”, and since we find it there, and it’s set to “John”, that’s what will be printed out in the log. 
+When we look for “p_name”, on “student”, since we can’t find “p_name” on “student” we go up the chain and look for it in “person”, and since we find it there, and it’s set to “John”, that’s what will be printed out in the log.
 
 Note that if we change person, we change student as well.
 
@@ -99,7 +99,7 @@ All JS objects delegate to the Object Prototype
 This is another way to re-use a pre-existing object, this time by directly adding properties to it. This is different from prototypal chains because it modifies the original object, rather than creating a new one.
 
 ```
-//this is an object decorator function as it adds properties to a person to make it into 
+//this is an object decorator function as it adds properties to a person to make it into
 //a student object
 
 var studentlike = function(person, school){
@@ -157,7 +157,7 @@ We can use the prototype object (an object that JS creates for us and attaches t
 ```
 var Human3 = function (a_name){
 	//delegate failed lookups of Human3 objects to Human3.prototype
-	var human = Object.create(Human3.prototype); 
+	var human = Object.create(Human3.prototype);
 	human.name = a_name;
 	return human;
 };
@@ -176,10 +176,10 @@ Pseudo classical classes are just a convenient way for us to make JavaScript cla
 If you’ve coded in another object oriented language (Java or C++) you might notice that JS classes look a little different, as unlike in other languages we need to create our objects in the class function and also return them. We can make JS classes look like classes in other languages, by using the *new* keyword:
 
 ```
-//In constructor mode JS automatically does the first and third line for us, so we 
+//In constructor mode JS automatically does the first and third line for us, so we
 //can comment them out
 var Human4 = function (a_name){
-	//var human = Object.create(Human4.prototype); 
+	//var human = Object.create(Human4.prototype);
 	this.name = a_name;
 	//return human;
 };
@@ -191,5 +191,5 @@ Human4.prototype.printGreeting = function(greeting){
 //Importantly we need to use "new" keyword when creating new objects
 //When we do that the interpreter adds the two lines we commented out
 
-var mike = new Human4("Mike"); 
+var mike = new Human4("Mike");
 ```
