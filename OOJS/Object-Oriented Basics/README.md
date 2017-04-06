@@ -3,7 +3,7 @@
 Link to office hours: [Office hours link](https://plus.google.com/events/cvrejvitte5a37k1vfli1veler8?authkey=CIistZK2pbbqYA)
 
 1. Objects in JS and Encapsulation
-2. “this” in JavaScript
+2. `this` in JavaScript
 3. Prototypal chains
 4. Object decoration
 5. Functional Classes
@@ -32,9 +32,9 @@ bio.printToLog();
 
 But there’s a lot more that you can do than just defining individual objects and then adding functions to them. You can make classes that will create objects for you, and you can have methods encapsulated in these classes as well.
 
-## *This* Keyword
+## The `this` Keyword
 
-A special keyword that can be used inside functions. When these functions are called from within an object, the *this* keyword normally refers to these objects.
+A special keyword that can be used inside functions. When these functions are called from within an object, the `this` keyword normally refers to these objects.
 
  ```js
 // Define two objects
@@ -62,8 +62,8 @@ obj1.my_method(); //logs "John", because this gets bound to “obj1”
 obj2.my_method(); //logs "Jane”, because this gets bound to “obj2”
 ```
 
-**Can we override what “this” refers to? Yes!**
-We can use *call* when calling our function (functionName.call()) and specify in the first parameter what we want *this* to be bound to.
+**Can we override what `this` refers to? Yes!**
+We can use `call` when calling our function (`functionName.call()`) and specify in the first parameter what we want `this` to be bound to.
 
 ## Prototypal Chains (Can I Borrow Some of your Properties?)
 Allows to reuse objects we already have. Allows for an object to "get" some of its properties from another object. The properties are not copied onto the new object we create that way, but instead we tell JS to look for properties not found in the new object in the old one.
@@ -81,13 +81,13 @@ student.school = "UPenn";
 console.log(student.school); //will log “UPenn”
 ```
 
-When we refer to a property that is defined and passed on from “person” to “student”, since that property is not found in “student”, we go up the chain and see if it’s found on “person”. If we find it in “person” then that’s the value we go for.
+When we refer to a property that is defined and passed on from `person` to `student`, since that property is not found in `student`, we go up the chain and see if it’s found on `person`. If we find it in `person` then that’s the value we go for.
 
 ```js
 console.log(student.p_name); //will log “John”
 ```
 
-When we look for “p_name”, on “student”, since we can’t find “p_name” on “student” we go up the chain and look for it in “person”, and since we find it there, and it’s set to “John”, that’s what will be printed out in the log.
+When we look for `p_name`, on `student`, since we can’t find `p_name` on `student` we go up the chain and look for it in `person`, and since we find it there, and it’s set to "John", that’s what will be printed out in the log.
 
 Note that if we change person, we change student as well.
 
@@ -134,7 +134,7 @@ david.printGreeting("Good afternoon"); //logs “Good afternoon David”
 **Class Methods**
 One disadvantage of the above way of defining a class method is that we had to refer to a function in the global scope: perhaps we would not want to have to define this function on the global scope (if for example we want the method to only be available from within instances of our class).
 
-What we can do is instead define our PrintGreeting inside the Human class: that way it will only be accessible from within this class.
+What we can do is instead define our `printGreeting` inside the Human class: that way it will only be accessible from within this class.
 
 ```js
 var Human2 = function (a_name) {
@@ -146,10 +146,10 @@ var Human2 = function (a_name) {
 };
 ```
 
-A disadvantage of this definition is that now a new instance of the PrintGreeing2 will be created for every new  instance of the Human2 class. If we create a lot of instances of Human2, then we also create a lot of copies of the printGreeting2 method. What we would really like is to have the PrintGreeing2 method somehow only in the scope of the Human2 class, but we don’t want to create a new such function for every instance of this class. That’s where *Prototypal Classes* come in.
+A disadvantage of this definition is that now a new instance of the `printGreeting2` will be created for every new instance of the `Human2` class. If we create a lot of instances of `Human2`, then we also create a lot of copies of the `printGreeting2` method. What we would really like is to have the `printGreeting2` method somehow only in the scope of the `Human2` class, but we don’t want to create a new such function for every instance of this class. That’s where *Prototypal Classes* come in.
 
 ## Prototypal Classes (Have your cake and eat it)
-We can use the prototype object (an object that JS creates for us and attaches to each function) to store all the methods we would like associated with our class. For this to work we need to delegate all failed look-ups to our class.prototype using Object.create():
+We can use the prototype object (an object that JS creates for us and attaches to each function) to store all the methods we would like associated with our class. For this to work we need to delegate all failed look-ups to our class.prototype using `Object.create()`:
 
 ```js
 var Human3 = function (a_name) {
@@ -165,12 +165,12 @@ Human3.prototype.printGreeting3 = function(greeting) {
 };
 ```
 
-That way we have only one instance of the printGreeting3 method associated with the class, it is stored under ClassName.prototype, and it’s accessible to all instances of the class.
+That way we have only one instance of the `printGreeting3` method associated with the class, it is stored under ClassName.prototype, and it’s accessible to all instances of the class.
 
-## The *New* Keyword (Pseudo Classical Classes)
+## The `new` Keyword (Pseudo Classical Classes)
 Pseudo classical classes are just a convenient way for us to make JavaScript classes resemble classes on other languages (and hence the name “Pseudo Classical”). You can think of this as a “nice wrapper”.
 
-If you’ve coded in another object oriented language (Java or C++) you might notice that JS classes look a little different, as unlike in other languages we need to create our objects in the class function and also return them. We can make JS classes look like classes in other languages, by using the *new* keyword:
+If you’ve coded in another object oriented language (Java or C++) you might notice that JS classes look a little different, as unlike in other languages we need to create our objects in the class function and also return them. We can make JS classes look like classes in other languages, by using the `new` keyword:
 
 ```js
 //In constructor mode JS automatically does the first and third line for us, so we
