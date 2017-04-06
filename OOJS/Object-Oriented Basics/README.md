@@ -17,13 +17,13 @@ Functions in JS can be encapsulated inside objects (objects are collections of i
  ```js
 //Creating an object
 var bio = {
-	"name": "John Doe",
-	"role": "Front End Developer"
+    "name": "John Doe",
+    "role": "Front End Developer"
 };
 
 //Encapsulating a function
 bio.printToLog = function printToLog() {
-	console.log(bio.name);
+    console.log(bio.name);
 };
 
 //Calling the function
@@ -39,18 +39,18 @@ A special keyword that can be used inside functions. When these functions are ca
  ```js
 // Define two objects
 var obj1 = {
-	"name": "John"
+    "name": "John"
 };
 
 var obj2 = {
-	"name": "Jane"
+    "name": "Jane"
 };
 
 
 //Define a function in the global scope, and use this inside the function:
 
 var printName = function() {
-	console.log(this.name);
+    console.log(this.name);
 };
 
 //Add reference to this function in obj1 and in obj2
@@ -70,7 +70,7 @@ Allows to reuse objects we already have. Allows for an object to "get" some of i
 
  ```js
 var person = {
-	"p_name": "John"
+    "p_name": "John"
 };
 
 //Create a new object, student, by “reusing” person.
@@ -100,8 +100,8 @@ This is another way to re-use a pre-existing object, this time by directly addin
 //this is an object decorator function as it adds properties to a person to make it into
 //a student object
 var studentlike = function(person, school) {
-	person.school = school;
-	return person;
+    person.school = school;
+    return person;
 };
 
 var mary = studentlike({"p_name": "Mary"}, "UCLA");
@@ -115,14 +115,14 @@ These really are just functions, and are very similar to Object Decorators, exce
 ```js
 //Let's define a new function on the global scope first
 var printGreeting = function(greeting) {
-	console.log(greeting + " " + this.name );
+    console.log(greeting + " " + this.name );
 };
 
 //Define a class named Human
 var Human = function (a_name) {
-	var human = {name: a_name};
-	human.printGreeting = printGreeting;
-	return human;
+    var human = {name: a_name};
+    human.printGreeting = printGreeting;
+    return human;
 };
 
 //make an instance of the Human class
@@ -138,11 +138,11 @@ What we can do is instead define our `printGreeting` inside the Human class: tha
 
 ```js
 var Human2 = function (a_name) {
-	var human = {name: a_name};
-	human.printGreeting2 = function(greeting) {
-		console.log(greeting + " " + this.name );
-	};
-	return human;
+    var human = {name: a_name};
+    human.printGreeting2 = function(greeting) {
+        console.log(greeting + " " + this.name );
+    };
+    return human;
 };
 ```
 
@@ -153,15 +153,15 @@ We can use the prototype object (an object that JS creates for us and attaches t
 
 ```js
 var Human3 = function (a_name) {
-	//delegate failed lookups of Human3 objects to Human3.prototype
-	var human = Object.create(Human3.prototype);
-	human.name = a_name;
-	return human;
+    //delegate failed lookups of Human3 objects to Human3.prototype
+    var human = Object.create(Human3.prototype);
+    human.name = a_name;
+    return human;
 };
 
 //Define printGreeting3 under Human3.prototype
 Human3.prototype.printGreeting3 = function(greeting) {
-	console.log(greeting + " " + this.name );
+    console.log(greeting + " " + this.name );
 };
 ```
 
@@ -176,13 +176,13 @@ If you’ve coded in another object oriented language (Java or C++) you might no
 //In constructor mode JS automatically does the first and third line for us, so we
 //can comment them out
 var Human4 = function (a_name) {
-	//var human = Object.create(Human4.prototype);
-	this.name = a_name;
-	//return human;
+    //var human = Object.create(Human4.prototype);
+    this.name = a_name;
+    //return human;
 };
 
 Human4.prototype.printGreeting = function(greeting) {
-	console.log(greeting + " " + this.name );
+    console.log(greeting + " " + this.name );
 };
 
 //Importantly we need to use "new" keyword when creating new objects
